@@ -1,0 +1,49 @@
+.toggle-slide {
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  direction: ltr;
+}
+.toggle-slide .toggle-on,.toggle-slide .toggle-off,.toggle-slide .toggle-blob {
+    float: left;
+}
+.toggle-slide .toggle-blob {
+    position: relative;
+    z-index: 99;
+    cursor: hand;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.toggle-light .toggle-slide {
+  border-radius: 9999px;
+}
+.toggle-light .toggle-slide .toggle-on,.toggle-light .toggle-slide .toggle-off,.toggle-light .toggle-slide .toggle-blob {
+  font-weight: 600;
+}
+.toggle-light .toggle-slide .toggle-on, .toggle-light .toggle-select .toggle-inner .active {
+  background: #1abc9c;
+  color: #fff;
+}
+.toggle-light .toggle-slide .toggle-off, .toggle-light .toggle-select .toggle-on {
+  color: #fff;
+  background: #fa625c;
+}
+.toggle-light .toggle-slide .toggle-blob {
+  border-radius: 50px;
+  background: #f8f8fb;
+  
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+.toggle-light .toggle-slide .toggle-blob:hover {
+  background: #fff;
+}

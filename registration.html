@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=9">
+  
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Registration</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  
+  <link href="css/toggles.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/prettyCheckable.css">
+  <link href="css/bootstrap-formhelpers.css" rel="stylesheet">
+  <link href="css/bootstrap-formhelpers-countries.flags.css" rel="stylesheet">  
+  <link href="css/editor.css" rel="stylesheet">
+  
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/ico/favicon.png">
+
+</head>
+
+
+<body>
+<div class="grid">
+<!--LEFT PANEL START-->
+<div class="left-panel col-cont">
+  <div class="logo resize">
+    <img src="img/logo.png" alt="">
+    <h1 class="visible-desktop">Kiss my Ads</h1>
+  </div>
+  <div class="left-menu">
+    <ul class="resize aside-menu">
+    <li><a href="#" class="dashbord"><p>Dashboard</p></a></li>
+    <li><a href="#" class="offer"><p>Offer</p></a></li>
+    <li><a href="#" class="reporting"><p>Reporting</p></a></li>
+    <li><a href="#" class="myprofile"><p>My Profile</p></a></li>
+    <li><a href="#" class="billing"><p>Billing</p></a></li>
+    <li><a href="#" class="logout"><p>Logout</p></a></li>
+  </ul>
+  </div>
+  <div class="footer-aside">
+    <ul class="follow-us">
+        <li rel="tooltip" title="Facebook"><a href="#" class="facebook"></a></li>
+        <li rel="tooltip" title="Twitter"><a href="#" class="twitter"></a></li>
+    </ul>
+    <p>© 2013 Kiss My Ads</p>
+  </div>
+</div>
+<!--LEFT PANEL END-->
+<div class="right-panel col-cont">
+<div class="my-right-spec">
+<div class="container-fluid" style="min-height: 700px;">
+<!--rounded stats start-->
+
+<!--HEADER SECTION START-->
+  <header class="row-fluid top-header">
+    <div class="heading">
+      <h2>Dashboard</h2>
+    </div>
+    <div class="account">
+      <ul>
+        <li><a href="#" class=""><i class="messages"></i></a></li>
+        <li><div class="thumb"><img src="img/profile-pic.png" alt=""></div>
+            <!--DROPDOWN START-->
+            <div class="dropdown">
+            <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+            Jawad S.
+            <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Setting</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+            </div>
+            <!--DROPDOWN END-->
+        </li>
+      </ul>
+    </div>
+  </header>
+<!--HEADER SECTION END-->
+
+  <div class="row-fluid">
+    <div class="span12">
+    
+    <ul class="breadcrumb unstyled mb-0 resize">
+      <li class="icon-back"><a href="#"><i class="back"></i></a></li>
+      <li><a href="#">Dashboard </a> <span class="divider">/</span></li>
+      <li class="active">Publisher Registration</li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div class="row-fluid">
+    
+    <div class="alert alert-info">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      <strong>Warning!</strong> Best check yo self, you're not looking too good.
+    </div>
+    
+    <div class="alert alert-success">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      <strong>Well done!</strong> You successfully read this important alert message.
+    </div>
+    
+    <div class="alert alert-error">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+      <strong>Oh snap!</strong> Change a few things up and try submitting again. 
+    </div>
+    
+  </div>
+
+<div class="row-fluid resize m-tb-25">
+
+<form id="loopForm" name="loopForm" class="form-horizontal">
+  <div class="control-group">
+    <label for="rgt_company" class="control-label">Company:</label>
+    <div class="controls">
+      <input type="text" class="input-xlarge" id="rgt_company">
+    </div>
+  </div>
+  <div class="control-group">
+    <label for="rgt_addressA" class="control-label">Address 1:</label>
+    <div class="controls">
+      <input type="text" class="input-xlarge" id="rgt_addressA">
+    </div>
+  </div>
+  <div class="control-group">
+    <label for="rgt_addressB" class="control-label">Address 2:</label>
+    <div class="controls">
+      <input type="text" class="input-xlarge" id="rgt_addressB">
+    </div>
+  </div>
+  <div class="control-group">
+    <label for="rgt_city" class="control-label">City/Town:</label>
+    <div class="controls">
+      <input type="text" class="input-xlarge" id="rgt_city">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label">Country:</label>
+    <div class="controls">
+
+      <div class="bfh-selectbox bfh-countries" data-country="US" data-flags="true">
+        <input type="hidden" value="" id="rgt_country">
+        <a class="bfh-selectbox-toggle" role="button" data-toggle="bfh-selectbox" href="#">
+          <span class="bfh-selectbox-option" data-option=""></span>
+          <span class="bg-lightergrey droplist" style="  "><b class="caret"></b></span>
+        </a>
+        <div class="bfh-selectbox-options">
+          <input type="text" class="bfh-selectbox-filter" placeholder="Type">
+          <div role="listbox">
+          <ul class="jawad-loop" role="option">
+          </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="control-group">
+    <label for="rgt_zipcode" class="control-label">Zipdode:</label>
+    <div class="controls">
+      <input type="text" class="input-xlarge" id="rgt_zipcode">
+    </div>
+  </div>
+  <div class="control-group">
+    <label for="rgt_phone" class="control-label">Phone:</label>
+    <div class="controls">
+      <input type="text" class="input-xlarge bfh-phone" id="rgt_phone" data-country="US">
+    </div>
+  </div>
+  <div class="control-group">
+    <label for="rgt_email" class="control-label">Email Address:</label>
+    <div class="controls">
+      <input type="email" pattern="[^ @]*@[^ @]*" value="" class="input-xlarge" id="rgt_email">
+    </div>
+  </div>
+  <div class="control-group">
+    <label for="rgt_fname" class="control-label">First name:</label>
+    <div class="controls">
+      <input type="text" class="input-xlarge" id="rgt_fname">
+    </div>
+  </div>
+  <div class="control-group">
+    <label for="rgt_lname" class="control-label">Last name:</label>
+    <div class="controls">
+      <input type="text" class="input-xlarge" id="rgt_lname">
+    </div>
+  </div>
+  <div class="control-group">
+    <label for="rgt_title" class="control-label">Title:</label>
+    <div class="controls">
+      <input type="text" class="input-xlarge" id="rgt_title">
+    </div>
+  </div>
+  <div class="control-group">
+    <label for="rgt_skype" class="control-label">Skype:</label>
+    <div class="controls">
+      <input type="text" class="input-xlarge" id="rgt_skype">
+    </div>
+  </div>
+  <div class="control-group">
+    <label for="rgt_bankinfo" class="control-label">Bank details:</label>
+    <div class="controls">
+      <input type="text" class="input-xlarge" id="rgt_bankinfo">
+    </div>
+  </div>
+  <div class="control-group loopCheckbox">
+    <div class="controls">
+
+      <input type="checkbox" name="checkbox-1[braket]" id="checkbox-1" value="checkbox-1">  
+      <label for="checkbox-1" tabindex="1" class="p-0px">Option one is this and that—be sure to include why it's great</label>
+  
+    </div>
+  </div>
+
+  <div class="bg-lightergrey p-tb-20">
+    <div class="control-group">
+      <label for="rgt_categories" class="control-label">Please pick your category:</label>
+      <div class="controls">
+
+        <div class="bfh-selectbox">
+        <input type="hidden" class="input-xlarge" name="rgt_categories" value="">
+        <a class="bfh-selectbox-toggle" role="button" data-toggle="bfh-selectbox" href="#">
+          <span class="bfh-selectbox-option input-medium" data-option="1">Option 1</span>
+          <span class="droplist"><b class="caret"></b></span>
+        </a>
+        <div class="bfh-selectbox-options">
+        <div role="listbox">
+          <ul class="jawad-loop" role="option">
+            <li><a tabindex="-1" href="#" data-option="1">Option 1</a></li>
+            <li><a tabindex="-1" href="#" data-option="2">Option 2</a></li>
+            <li><a tabindex="-1" href="#" data-option="3">Option 3</a></li>
+          </ul>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="control-group">
+      <label for="rgt_vatnum" class="control-label">Your VAT-number:</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="rgt_vatnum">
+      </div>
+    </div>
+    <div class="control-group">
+      <label for="rgt_password" class="control-label">Password:</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="rgt_password">
+      </div>
+    </div>
+    <div class="control-group">
+      <label for="rgt_cnfpassword" class="control-label">Confirm Password:</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="rgt_cnfpassword">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label">Do you want to promote adult offers?:</label>
+      <div class="controls">
+        
+        <div class=toggle-light>
+          <div class="toggle on"></div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label">Have you previously been an Affiliate?:</label>
+      <div class="controls">
+
+        <div class=toggle-light>
+          <div class="toggle"></div>
+        </div>
+      
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label">Do you have any experience with mobile-advertising?:</label>
+      <div class="controls">
+        <div class=toggle-light>
+          <div class="toggle"></div>
+        </div>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label">Are you a media-buyer?:</label>
+      <div class="controls">
+        <div class=toggle-light>
+          <div class="toggle"></div>
+        </div>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label">How did you hear about KissMyAds:</label>
+      <div class="controls">
+        <div class="input-xxlarge resize relative">
+          <div id="wmd-button-bar" class="loop-editor"></div>
+          <textarea rows="8" class="input-xxlarge resize" id="wmd-input"></textarea>
+        </div>
+      </div>
+      
+    </div>
+    <div class="control-group">
+      <label class="control-label">Would you like to stay informed about any new offers?</label>
+      <div class="controls">
+        <div class=toggle-light>
+          <div class="toggle"></div>
+        </div>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label">What is your preferred method of communication with KissMyAds:</label>
+      <div class="controls">
+
+        <div class="bfh-selectbox">
+        <input type="hidden" class="input-xlarge" name="selectbox1" value="">
+        <a class="bfh-selectbox-toggle" role="button" data-toggle="bfh-selectbox" href="#">
+          <span class="bfh-selectbox-option input-medium" data-option="1">Option 1</span>
+          <span class="droplist"><b class="caret"></b></span>
+        </a>
+        <div class="bfh-selectbox-options">
+        <div role="listbox">
+          <ul class="jawad-loop" role="option">
+            <li><a tabindex="-1" href="#" data-option="1">Option 1</a></li>
+            <li><a tabindex="-1" href="#" data-option="2">Option 2</a></li>
+          </ul>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="controls m-tb-25">
+    <div class="row-fluid">
+    <button data-loading-text="Submitting..." type="submit" id="fat-btn" class="btn btn-success span6">Submit</button>
+    </div>
+  </div>
+</form>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<script src="js/jquery-1.8.3.js"></script>
+<script src="js/eqheight.js"></script>
+<script>
+  $(document).ready(function() {
+	$(".grid").eqHeight(".col-cont");
+  });
+</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/nod.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script src="js/toggles.js"></script>
+<script>
+$('.toggle').toggles({});
+</script>
+<script src="js/radiocheckbox.js"></script>
+<script>
+// Loading Button
+$(document).ready(function($) {
+  $('#fat-btn')
+	.click(function () {
+	  var btn = $(this)
+	  btn.button('loading')
+	  setTimeout(function () {
+		btn.button('reset')
+	  }, 3000)
+  });
+});
+
+// Checkbox/Radio
+$(document).ready(function(){
+	$('.loopCheckbox input[type=checkbox],.loopCheckbox input[type=radio]').prettyCheckboxes();
+	$('.inlineRadios input[type=radio]').prettyCheckboxes({'display':'inline'});
+});
+
+</script>
+<script src="js/bootstrap-formhelpers-selectbox.js"></script>
+<script src="js/bootstrap-formhelpers-countries.en_US.js"></script>
+<script src="js/bootstrap-formhelpers-countries.js"></script>
+<script src="js/bootstrap-formhelpers-phone.format.js"></script>
+<script src="js/bootstrap-formhelpers-phone.js"></script>
+
+<script>
+  var metrics = [
+    [ '#rgt_company, #rgt_addressA, #rgt_city,  #rgt_zipcode, #rgt_phone, #rgt_email, #rgt_fname, #rgt_lname, #rgt_title, #rgt_skype, #rgt_bankinfo, #rgt_vatnum, #rgt_password, #rgt_cnfpassword', 'one-of', 'This field is required.' ]
+  ];
+  $( '#loopForm' ).nod( metrics );
+  
+</script>
+
+<script src="js/Markdown.Converter.js"></script>
+<script src="js/Markdown.Sanitizer.js"></script>
+<script src="js/Markdown.Editor.js"></script>
+<script>
+(function () {
+	var converter1 = Markdown.getSanitizingConverter();
+	var editor1 = new Markdown.Editor(converter1);
+	editor1.run();
+	
+	var converter2 = new Markdown.Converter();
+
+	converter2.hooks.chain("preConversion", function (text) {
+		return text.replace(/\b(a\w*)/gi, "*$1*");
+	});
+
+	converter2.hooks.chain("plainLinkText", function (url) {
+		return "This is a link to " + url.replace(/^https?:\/\//, "");
+	});
+	
+	var help = function () { alert("Do you need help?"); }
+	
+	var editor2 = new Markdown.Editor(converter2, "-second", { handler: help });
+	
+	editor2.run();
+})();
+</script>
+
+</body>
+</html>

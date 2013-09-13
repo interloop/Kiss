@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=9">
+  
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Dashboard</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  
+  
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/ico/favicon.png">
+
+</head>
+
+
+<body>
+<div class="grid">
+<!--LEFT PANEL START-->
+<div class="left-panel col-cont">
+  <div class="logo resize">
+    <img src="img/logo.png" alt="">
+    <h1 class="visible-desktop">Kiss my Ads</h1>
+  </div>
+  <div class="left-menu">
+    <ul class="resize aside-menu">
+    <li><a href="#" class="dashbord"><p>Dashboard</p></a></li>
+    <li><a href="#" class="offer"><p>Offer</p></a></li>
+    <li><a href="#" class="reporting"><p>Reporting</p></a></li>
+    <li><a href="#" class="myprofile"><p>My Profile</p></a></li>
+    <li><a href="#" class="billing"><p>Billing</p></a></li>
+    <li><a href="#" class="logout"><p>Logout</p></a></li>
+  </ul>
+  </div>
+  <div class="footer-aside">
+    <ul class="follow-us">
+        <li rel="tooltip" title="Facebook"><a href="#" class="facebook"></a></li>
+        <li rel="tooltip" title="Twitter"><a href="#" class="twitter"></a></li>
+    </ul>
+    <p>© 2013 Kiss My Ads</p>
+  </div>
+</div>
+<!--LEFT PANEL END-->
+<div class="right-panel col-cont">
+<div class="my-right-spec">
+<div class="container-fluid">
+<!--rounded stats start-->
+
+<!--HEADER SECTION START-->
+  <header class="row-fluid top-header">
+    <div class="heading">
+      <h2>Dashboard</h2>
+    </div>
+    <div class="account">
+      <ul>
+        <li><a href="#" class=""><i class="messages"></i></a></li>
+        <li><div class="thumb"><img src="img/profile-pic.png" alt=""></div>
+            <!--DROPDOWN START-->
+            <div class="dropdown">
+            <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+            Jawad S.
+            <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Setting</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+            </div>
+            <!--DROPDOWN END-->
+        </li>
+      </ul>
+    </div>
+  </header>
+<!--HEADER SECTION END-->
+     
+  <div class="row-fluid bg-lightergrey">    
+    <ul class="nav nav-tabs my-tabs row-fluid" id="myTab">
+      <li class="active span4"><a data-toggle="tab" href="#chart-a">
+        <div class="chart orange cnt-center" data-bar-color="#e6843d" data-percent="75">75%</div>
+        <hgroup class="text-center pie-chart-txt">
+          <h3>Click today</h3>
+          <h4>3.123.123</h4>
+        </hgroup>
+      </a></li>
+      <li class="span4"><a data-toggle="tab" href="#chart-b">
+        <div class="chart blue cnt-center" data-bar-color="#2980b9" data-percent="100">100%</div>
+        <hgroup class="text-center pie-chart-txt">
+          <h3>Conversions today</h3>
+          <h4>3.123.123</h4>
+        </hgroup>
+      </a></li>
+      <li class="span4"><a data-toggle="tab" href="#chart-c">
+        <div class="chart green cnt-center" data-bar-color="#02b649" data-percent="68">68%</div>
+        <hgroup class="text-center pie-chart-txt">
+          <h3>Revenue today</h3>
+          <h4>3.123.123</h4>
+        </hgroup>
+      </a></li>
+    </ul>
+    <div class="tab-content hidden-phone" id="myTabContent">
+      <div id="chart-a" class="tab-pane fade in active row-fluid">
+        <div id="clicks" style="min-width: 80%; height: 400px; overflow: hidden; "></div>
+        <div class="row-fluid graph-footer-spacing resize">
+          <div class="pull-left">
+            <span class="row-fluid f-14 f-bold">Total Clicks</span>
+            <span class="row-fluid f-30 f-weight-600">168.123.123</span>
+          </div>
+          <div class="pull-right">
+            <span class="row-fluid f-11">Today 2:25 PM</span>
+            <span class="row-fluid f-24">San Francisco, CA</span>
+          </div>
+        </div>
+      </div>
+      <div id="chart-b" class="tab-pane fade">
+        <div id="conversions" style="min-width: 75%; height: 400px; overflow: hidden; "></div>
+        <div class="row-fluid graph-footer-spacing resize">
+          <div class="pull-left">
+            <span class="row-fluid f-14 f-bold">Total Conversions</span>
+            <span class="row-fluid f-30 f-weight-600">168.123.123</span>
+          </div>
+          <div class="pull-right">
+            <span class="row-fluid f-11">Today 2:25 PM</span>
+            <span class="row-fluid f-24">San Francisco, CA</span>
+          </div>
+        </div>
+      </div>
+      <div id="chart-c" class="tab-pane fade">
+        <div id="revenue" style="min-width: 80%; height: 400px; overflow: hidden; "></div>
+        <div class="row-fluid graph-footer-spacing resize">
+          <div class="pull-left">
+            <span class="row-fluid f-14 f-bold">Total Revenue</span>
+            <span class="row-fluid f-30 f-weight-600">168.123.123</span>
+          </div>
+          <div class="pull-right">
+            <span class="row-fluid f-11">Today 2:25 PM</span>
+            <span class="row-fluid f-24">San Francisco, CA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!--TIMELINE START-->
+    <div class="row-fluid">
+    	<div class="span12">
+        	<div class="time-line">
+            	<div class="timeline-title resize"><h4>Latest News</h4></div>
+                <ul>
+                	<!--LIST ITEM START-->
+                	<li>
+                    	<div class="timeline-date">
+                        	<h2>13</h2>
+                            <p>August</p>
+                        </div>
+                        <div class="text">
+                        	<h4>Lorem ipsum</h4>
+                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum 
+auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
+Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+                        </div>
+                    </li>
+                    <!--LIST ITEM END-->
+                    <!--LIST ITEM START-->
+                	<li>
+                    	<div class="timeline-date">
+                        	<h2>13</h2>
+                            <p>August</p>
+                        </div>
+                        <div class="text">
+                        	<h4>Lorem ipsum</h4>
+                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum 
+auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
+Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+                        </div>
+                    </li>
+                    <!--LIST ITEM END-->
+                    <!--LIST ITEM START-->
+                	<li>
+                    	<div class="timeline-date">
+                        	<h2>13</h2>
+                            <p>August</p>
+                        </div>
+                        <div class="text">
+                        	<h4>Lorem ipsum</h4>
+                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum 
+auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. 
+Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+                        </div>
+                    </li>
+                    <!--LIST ITEM END-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--TIMELINE END-->
+</div>
+</div>
+</div>
+</div>
+
+<script src="js/jquery-1.8.3.js"></script>
+<script src="js/eqheight.js"></script>
+<script>
+  $(document).ready(function() {
+	$(".grid").eqHeight(".col-cont");
+  });
+</script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<script src="js/jquery.easy-pie-chart.js"></script>
+
+<script src="js/custom.js"></script>
+<script src="js/highcharts.js"></script>
+
+<!--<script src="http://code.highcharts.com/highcharts.js"></script>-->
+<script src="js/grid.js"></script>
+
+<script>
+
+// Pie Charts
+$(function() {
+    //create instance
+    $('.chart').easyPieChart({
+        animate: 2000
+    });
+
+});
+
+// Graph Clicks
+$(function () {
+  $('#clicks').highcharts({
+	  chart: {
+		  type: 'area'
+	  },
+	  title: {
+		  text: 'Click 2013'
+	  },
+	  xAxis: {
+		  categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+	  },
+	  credits: {
+		  enabled: false
+	  },
+	  series: [{
+		  name: 'Click',
+		  color: '#e6843d',
+		  data: [12000, 14000, 11000, 19000, 21000, 18000, 23000, 19000, 17000, 28000, 14000, 21000]
+	  }]
+  });
+});
+
+
+  $(function () {
+	$('#conversions').highcharts({
+		
+		title: {
+			text: 'Conversions 2013'
+		},
+		xAxis: [{
+			categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+		}],
+		yAxis: [{ // Primary yAxis
+			labels: {
+				format: '{value}'
+			},
+			title: {
+				text: 'Conversions',
+				style: {
+					color: '#89A54E'
+				}
+			}
+		}, { // Secondary yAxis
+			title: {
+				text: 'Jawad',
+			},
+			
+			opposite: false
+		}],
+		tooltip: {
+			shared: false
+		},
+		legend: {
+			layout: 'vertical',
+			align: 'left',
+			x: 120,
+			verticalAlign: 'top',
+			y: 100,
+			floating: true
+		},
+		credits: {
+			enabled: false
+		},
+		series: [{
+			name: 'Conversions',
+			color: '#2980b9',
+			type: 'column',
+			data: [900, 600, 800, 300, 100, 500, 1600, 1300, 1900, 1600, 900, 1700],
+		   
+		},]
+	});
+  });
+  
+  $(function () {
+	$('#revenue').highcharts({
+	  chart: {
+		  type: 'column',
+		  margin: [ 50, 50, 100, 80]
+	  },
+	  title: {
+		  text: 'Revenue 2013'
+	  },
+	  xAxis: {
+		  categories: [
+			  'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+		  ],
+		  labels: {
+			  rotation: -45,
+			  align: 'right',
+			  
+		  }
+	  },
+	  
+	  legend: {
+		  enabled: false
+	  },
+	  tooltip: {
+		  pointFormat: 'Revenue <b>{point.y:} </b>',
+	  },
+	  credits: {
+	enabled: false
+	},
+	  series: [{
+		  name: 'Population',
+		  color: '#02b649',
+		  data: [ 1191, 1200, 1011, 1500, 1800, 2300, 1600, 1160, 1800, 2400, 2030, 2600],
+		  dataLabels: {
+			  enabled: false,
+			  rotation: -90,
+			  color: '#FFFFFF',
+			  align: 'right',
+			  x: 4,
+			  y: 10,
+			  style: {
+				  fontSize: '12px'
+			  }
+		  }
+	  }]
+	});
+  });
+
+</script>
+
+
+
+</body>
+</html>

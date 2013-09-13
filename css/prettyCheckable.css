@@ -1,0 +1,21 @@
+label.checkbox span.holder{height:78px; width: 26px !important; background:url(../img/checkbox.png) 0 0px no-repeat; }
+label.radio span.holder{height:78px; width: 26px !important; background:url(../img/radio.png) 0 0px no-repeat; }
+label.checkbox:hover span.holder,label.radio:hover span.holder{top:-26px !important; }
+label.checked span.holder,label.checked span.holder,label.checked:hover span.holder,label.checked:hover span.holder{top:-52px !important; }
+label.list{float:left;clear:left;margin:0 0 5px 0; line-height: 26px; }
+label.inline{float:left;margin:0 10px 0 0; }
+input.hiddenCheckbox{position:absolute;left:-10000px; }
+label.prettyCheckbox span.holderWrap{display:block;float:left;position:relative;margin-right:5px;overflow:hidden;width:26px !important; height:26px !important; }
+label.prettyCheckbox span.holder{display:block;position:absolute;top:0;left:0; }
+label.checked { color: #1abc9c; }
+
+
+.loopCheckbox .radio, .checkbox { padding-left: 0px; }
+
+
+label.checkbox span.holder, label.radio span.holder{
+	transition: all 0.0s ease-in-out;
+	-moz-transition: all 0.0s ease-in-out;
+	-o-transition: all 0.0s ease-in-out;
+	-webkit-transition: all 0.0s ease-in-out;
+}
